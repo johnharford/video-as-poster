@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>videoposter</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:ital,wght@0,300;0,500;1,700&display=swap" rel="stylesheet">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+  </style>
+  <link href="css/vidposter.css" rel="stylesheet">
+</head>
+<body>
+  <div class="vidcontainer">
+    <div class="vidloop">
+      <video playsinline autoplay muted loop>
+        <source src="media/ep1-loop.mp4">
+      </video>
+    </div>
+
+    <video-js id="vid1" data-account="6005208634001" data-player="ttKChzIPd" data-embed="default" controls="" data-video-id="6217451220001" data-playlist-id="" data-application-id="" class="mainvideo vjs-fluid"></video-js>
+    <div class="vidoverlay">
+      <div class="pausePlay">
+        <img src="media/krd-outline.svg">
+        <div class="btnText">Play video</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="vidcontainer">
+  <div class="vidloop">
+    <video playsinline autoplay muted loop>
+      <source src="https://interactives.stuff.co.nz/2021/k-road-chronicles-2/media/ep2-loop.mp4">
+    </video>
+  </div>
+
+  <video-js id="vid2" data-account="6005208634001" data-player="ttKChzIPd" data-embed="default" data-video-id="6217666441001" data-playlist-id="" data-application-id="" class="mainvideo vjs-fluid"></video-js>
+  <div class="vidoverlay">
+    <div class="pausePlay">
+      <img src="https://interactives.stuff.co.nz/2021/k-road-chronicles-2/media/krd-outline.svg" alt="krd logo"/>
+      <div class="btnText">Play video</div>
+    </div>
+  </div>
+</div>
+
+<div class="vidcontainer">
+  <div class="vidloop">
+    <video playsinline autoplay muted loop>
+      <source src="https://interactives.stuff.co.nz/2021/k-road-chronicles-2/media/ep3-loop.mp4">
+    </video>
+  </div>
+
+  <video-js id="vid3" data-account="6005208634001" data-player="ttKChzIPd" data-embed="default" data-video-id="6217673691001" data-playlist-id="" data-application-id="" class="mainvideo vjs-fluid"></video-js>
+  <div class="vidoverlay">
+    <div class="pausePlay">
+      <img src="https://interactives.stuff.co.nz/2021/k-road-chronicles-2/media/krd-outline.svg" alt="krd logo"/>
+      <div class="btnText">Play video</div>
+    </div>
+  </div>
+</div>
+
+<div class="vidcontainer">
+  <div class="vidloop">
+    <video playsinline autoplay muted loop>
+      <source src="https://interactives.stuff.co.nz/2021/k-road-chronicles-2/media/ep4-loop.mp4">
+    </video>
+  </div>
+
+  <video-js id="vid4" data-account="6005208634001" data-player="ttKChzIPd" data-embed="default" data-video-id="6217681521001" data-playlist-id="" data-application-id="" class="mainvideo vjs-fluid"></video-js>
+  <div class="vidoverlay">
+    <div class="pausePlay">
+      <img src="https://interactives.stuff.co.nz/2021/k-road-chronicles-2/media/krd-outline.svg" alt="krd logo"/>
+      <div class="btnText">Play video</div>
+    </div>
+  </div>
+</div>
+
+  <!-- <script src="https://players.brightcove.net/3921507366001/kKzp0uhUK_default/index.min.js"></script> -->
+  <script src="https://players.brightcove.net/6005208634001/ttKChzIPd_default/index.min.js"></script>
+  <script src="js/vidposter.js"></script>
+</body>
+</html>
+

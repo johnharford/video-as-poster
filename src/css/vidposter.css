@@ -1,0 +1,85 @@
+.vidcontainer {
+  position: relative;
+  width: 100vw;
+  background-color: black;
+  margin-bottom: 50px;
+}
+
+.vidcontainer video {
+  width: 100%;
+}
+
+.vidcontainer .mainvideo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.vidcontainer .vidoverlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 50px;
+  left: 0;
+  background: transparent;
+}
+
+.vidcontainer .vidoverlay .pausePlay {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 220px;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 5px 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  background-color: white;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  border: 4px solid black;
+}
+
+.vidcontainer .vidoverlay .pausePlay:hover {
+  background-color: #f5a450;
+}
+
+.vidcontainer .vidoverlay .pausePlay img {
+  width: 50px;
+}
+
+@media (max-width: 480px) {
+  .vidcontainer .vidoverlay .pausePlay {
+    font-size: 18px;
+    padding: 5px;
+    width: 180px;
+    border: 3px solid black;
+  }
+  .vidcontainer .vidoverlay .pausePlay img {
+    width: 40px;
+  }
+}

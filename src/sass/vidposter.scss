@@ -1,0 +1,77 @@
+.vidcontainer {
+  position: relative;
+  width: 100vw;
+  //height: 100vh;
+  background-color: black;
+  margin-bottom: 50px;
+
+  video {
+    //object-fit: cover;
+    width: 100%;
+    //height: 100vh;
+  }
+
+  .mainvideo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+  }
+  .vidoverlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 50px;
+    left: 0;
+    background: transparent;
+    .pausePlay {
+      box-sizing: border-box;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 220px;
+      transform: translate(-50%, -50%);
+      padding: 5px 30px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 22px;
+      background-color: white;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 25px;
+      border: 4px solid black;
+  
+      &:hover {
+        background-color:  #f5a450;
+      }
+  
+      img {
+        width: 50px;
+      }
+    }
+  }
+  
+  
+
+  @media (max-width: 480px) {
+    .vidoverlay {
+      .pausePlay {
+        font-size: 18px;
+        padding: 5px;
+        width: 180px;
+        border: 3px solid black;
+  
+        img {
+          width: 40px;
+        }
+      }
+    }
+    
+    
+  }
+}
